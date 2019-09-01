@@ -9,7 +9,13 @@ class Gym
     Membership.all.select { |membership| membership.gym == self }
   end
   
-  def 
+  def allLifter
+    self.myGym.map { |membership| membership.lifter }
+  end
+  
+  def allLiftername
+    
+  end
   
   def self.all 
     Membership.all.map { |membership| membership.gym }
