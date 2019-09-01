@@ -5,7 +5,9 @@ class Gym
     @name = name
   end
   
+  def self.
+  
   def self.all 
-    Membership
+    Membership.all.map { |membership| membership.gym }
   end
 end
