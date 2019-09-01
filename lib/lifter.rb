@@ -5,4 +5,12 @@ class Lifter
     @name = name
     @lift_total = lift_total
   end
+  
+  def allLifters
+    Membership.all.map { |membership| membership.lifters }
+  end
+  
+  def myMemberships
+    membership.all.select { |membership| membership.lifter == self }
+  end
 end
