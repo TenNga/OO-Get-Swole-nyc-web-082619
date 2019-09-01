@@ -7,7 +7,7 @@ class Lifter
   end
   
   def self.all 
-    Membership.all.map { |membership| membership.lifters }
+    Membership.all.map { |membership| membership.lifter }
   end
   
   def myMemberships
