@@ -14,8 +14,10 @@ class Gym
   end
   
   def allLiftername
-    
+    self.allLifter.map { |lifter| lifter.name }
   end
+  
+  def 
   
   def self.all 
     Membership.all.map { |membership| membership.gym }
