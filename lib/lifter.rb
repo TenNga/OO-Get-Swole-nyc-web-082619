@@ -32,6 +32,6 @@ class Lifter
   end
   
   def signupGym(gym,cost)
-    
+    Membership.new(cost,gym,self)
   end
 end
