@@ -5,6 +5,10 @@ require_relative '../config/environment.rb'
 # test code goes here
 
 tenzin = Lifter.new("Tenzin", 500)
+ngawang = Lifter.new("Ngawang", 212)
+kevin = Lifter.new("Kevin", 43)
+
+
 
 
 binding.pry
