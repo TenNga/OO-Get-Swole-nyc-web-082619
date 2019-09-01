@@ -5,7 +5,11 @@ class Gym
     @name = name
   end
   
-  def self.
+  def myGym
+    Membership.all.select { |membership| membership.gym == self }
+  end
+  
+  def 
   
   def self.all 
     Membership.all.map { |membership| membership.gym }
