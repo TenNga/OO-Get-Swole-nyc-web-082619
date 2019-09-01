@@ -6,7 +6,7 @@ class Lifter
     @lift_total = lift_total
   end
   
-  def allLifters
+  def self.all 
     Membership.all.map { |membership| membership.lifters }
   end
   
