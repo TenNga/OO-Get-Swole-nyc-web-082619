@@ -20,6 +20,7 @@ class Gym
   def totalLif
     totalLift = 0
     self.allLifter.each { |lifter| totalLift += lifter.lift_total }
+    totalLift
   end
   
   def self.all 
