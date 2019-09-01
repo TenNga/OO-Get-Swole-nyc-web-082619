@@ -11,7 +11,7 @@ class Lifter
   end
   
   def myMemberships
-    membership.all.select { |membership| membership.lifter == self }
+    Membership.all.select { |membership| membership.lifter == self }
   end
   
   def myGyms
