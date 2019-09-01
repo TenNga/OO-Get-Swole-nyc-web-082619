@@ -17,7 +17,10 @@ class Gym
     self.allLifter.map { |lifter| lifter.name }
   end
   
-  def 
+  def totalLif
+    totalLift = 0
+    self.allLifter.each { |lifter| totalLift += lifter.lift_total }
+  end
   
   def self.all 
     Membership.all.map { |membership| membership.gym }
