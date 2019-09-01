@@ -21,7 +21,7 @@ class Lifter
   def avgLiftTotal
     liftTotal = 0
     totalLifter = self.class.all.count
-    self.class.all.each { |lifter| liftTotal += lifter.lift_toal }
+    self.class.all.each { |lifter| liftTotal += lifter.lift_total }
     avgLift = liftTotal.to_f/totalLifter.to_f
   end
   
