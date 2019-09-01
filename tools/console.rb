@@ -12,7 +12,9 @@ blink = Gym.new("Blink")
 ymca = Gym.new("YMCA")
 nysc = Gym.new("New York Sports Club")
 
-
+tenzinSignUp = tenzin.signupGym(nysc,231)
+ngawangSignup = ngawang.signupGym(blink,310)
+kevinSignup = kevin.signupGym(ymca,50)
 binding.pry
 
 puts "Gains!"
