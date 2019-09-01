@@ -6,4 +6,6 @@ class Gym
   end
   
   def self.all 
+    Membership
+  end
 end
