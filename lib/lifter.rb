@@ -15,7 +15,7 @@ class Lifter
   end
   
   def myGyms
-    self.myMemberships.gym { |membership| membership.gym }
+    self.myMemberships.map { |membership| membership.gym }
   end
   
   def avgLiftTotal
