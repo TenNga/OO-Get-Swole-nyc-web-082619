@@ -4,6 +4,7 @@ require_relative '../config/environment.rb'
 
 # test code goes here
 
+tenzin = Lifter.new("Tenzin", 500)
 
 
 binding.pry
