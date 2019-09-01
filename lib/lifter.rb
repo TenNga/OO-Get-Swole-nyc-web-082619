@@ -25,8 +25,13 @@ class Lifter
     avgLift = liftTotal.to_f/totalLifter.to_f
   end
   
-  def totalGymCost(lifter)
+  def totalGymCost
     totalCost = 0 
-    self.myMemberships.each { |membership| membership.
+    self.myMemberships.each { |membership| totalCost += membership.cost }
+    totalCost
+  end
+  
+  def signupGym(gym,cost)
+    
   end
 end
